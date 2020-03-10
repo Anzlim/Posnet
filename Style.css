@@ -1,1 +1,37 @@
 /* All The CSS in one place */
+
+
+
+body{
+overflow-x:hidden;
+
+}
+header{
+   margin: -10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 15px #ccc;
+   
+  
+}
+header h1 {
+
+    font-size: 30px;
+    margin-left: 50px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    color: #0000b3;
+}
+
+.main{
+display: flex;
+    margin-top: 50px;
+}
+
+.module-container{
+    width: 70%;
+    min-height: 100vh;
+    display: flex;
+    margin-left: 50px;
+    flex-wrap: wrap;
+}

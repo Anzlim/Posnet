@@ -4,7 +4,7 @@
 
 body{
 overflow-x:hidden;
-
+font-family: sans-serif;
 }
 header{
    margin: -10px;
@@ -30,7 +30,7 @@ display: flex;
 
 .module-container{
     width: 70%;
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     margin-left: 50px;
     flex-wrap: wrap;

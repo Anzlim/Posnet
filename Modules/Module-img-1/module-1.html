@@ -3,24 +3,83 @@
 
 
 <link rel="stylesheet" type="text/css" href="../../style.css"/>
+ <script src="../p5.min.js"></script>
+  <script src="../p5.dom.min.js"></script>
+  <script src="../ml5.min.js" type="text/javascript"></script>
+  
+  
+  <style>
+  
+  #canvas-input{
 
+    position:absolute;
+	left:-500px;
+  }
+  
+  label{
+  position:relative;
+  display:block;
+  background: blue;
+    padding: 5px;
+    color: white;
+    
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	width:fit-content;
+  }
+  
+  .module-container-canvas{
+    display:block ;
+    width: 70%;
+    min-height: auto;
+    margin-left: 50px;
+
+  }
+  
+  canvas{
+  margin-top:20px;
+  }
+  
+  h3{
+  color: #585858;
+  }
+  
+  header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  svg{
+      color: aliceblue;
+    fill: blue;
+    margin: 15px;
+  }
+  </style>
 </head>
 <body>
 
-<header><h1>Real Time Posture Detector</h1></header>
+<header><h1>Real Time Posture Detector</h1><div><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/><path d="M0 0h24v24H0z" fill="none"/></svg></a></div></header>
 
 <div class="main">
 
 
-<div class="module-container">
+<div class="module-container-canvas">
 
-Here is the canvas
+<h3>Add The Correct Image Which Should be the right Side view</h3>
+<label for="canvas-input">Upload Image</label>
 </div>
 
 <div class="information">
-The information for DATA
+<h3>Information</h3>
+<div class="information"></div>
 </div>
 </div>
+
+ <script src="Script.js"></script>
 </body>
 
 </html>
